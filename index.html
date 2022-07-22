@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iAuro Calculator</title>
+    <link rel="stylesheet" href="calci.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+  
+  
+ <button onclick="myFunction()" class="btn btn-primary">Calculator</button>
+ 
+ 
+ 
+ 
+
+<div class="container" id="myDIV" style="width:30%;">
+      <div class="display">
+        <input id="screen" type="text" placeholder="0" />
+      </div>
+
+      <div class="btns">
+        <div class="row">
+          <button id="ce" onclick="backspc()">CE</button>
+          
+          <button class="btn2">(</button>
+          <button class="btn2">)</button>
+          <button class="btn2">%</button>
+          <button id="ac" onclick="screen.value=''">AC</button>
+        </div>
+
+        <div class="row">
+          
+          <button class="btn2">7</button>
+          <button class="btn2">8</button>
+          <button class="btn2">9</button>
+          <button class="btn2">÷</button>
+        </div>
+
+        <div class="row">
+          
+          <button class="btn2">4</button>
+          <button class="btn2">5</button>
+          <button class="btn2">6</button>
+          <button class="btn2">×</button>
+        </div>
+
+        <div class="row">
+          
+          <button class="btn2">1</button>
+          <button class="btn2">2</button>
+          <button class="btn2">3</button>
+          <button class="btn2">-</button>
+        </div>
+
+        <div class="row">
+          
+          <button class="btn2">0</button>
+          <button class="btn2">.</button>
+          <button id="eval" onclick="screen.value=eval(screen.value)">=</button>
+          <button class="btn2">+</button>
+        </div>
+      </div>
+    </div>
+	
+<button onclick="myFunction1()" class="btn btn-primary">Sci.Calculator</button>
+  
+  
+    <div class="container" id="myDIV1"style="width:30%;">
+      <div class="display">
+        <input id="screen1" type="text" placeholder="0" />
+      </div>
+
+      <div class="btns">
+        <div class="row">
+          <button id="ce" onclick="backspc()">CE</button>
+          <button onclick="fact()">x!</button>
+          <button class="btn1">(</button>
+          <button class="btn1">)</button>
+          <button class="btn1">%</button>
+          <button id="ac" onclick="screen1.value=''">AC</button>
+        </div>
+
+        <div class="row">
+          <button onclick="sin()">sin</button>
+          <button onclick="pi()">π</button>
+          <button class="btn1">7</button>
+          <button class="btn1">8</button>
+          <button class="btn1">9</button>
+          <button class="btn1">÷</button>
+        </div>
+
+        <div class="row">
+          <button onclick="cos()">cos</button>
+          <button onclick="log()">log</button>
+          <button class="btn1">4</button>
+          <button class="btn1">5</button>
+          <button class="btn1">6</button>
+          <button class="btn1">×</button>
+        </div>
+
+        <div class="row">
+          <button onclick="tan()">tan</button>
+          <button onclick="sqrt()">√</button>
+          <button class="btn1">1</button>
+          <button class="btn1">2</button>
+          <button class="btn1">3</button>
+          <button class="btn1">-</button>
+        </div>
+
+        <div class="row">
+          <button onclick="e()">e</button>
+          <button onclick="pow()">
+            x
+            <span style="position: relative; bottom: 0.4em; right: 0.1em"
+              >y</span
+            >
+          </button>
+          <button class="btn1">0</button>
+          <button class="btn1">.</button>
+          <button id="eval" onclick="screen1.value=eval(screen1.value)">=</button>
+          <button class="btn1">+</button>
+        </div>
+      </div>
+    </div>
+  
+
+
+<script src="cal.js"></script>
+<script src="scical.js"></script>
+  </body>
+</html>
